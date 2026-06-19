@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S.A.R.A. System Dashboard</title>
+    <title>Ey3-Sp4 Dashboard</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
         rel="stylesheet">
@@ -345,21 +345,21 @@
 
 <body>
     <header>
-        <h1>S.A.R.A. Vision Control</h1>
-        <div class="subtitle">Distributed Actuation System - Team 313</div>
+        <h1>Ey3-Sp4</h1>
+        <div class="subtitle">Face Recognition & Servo Tracking System</div>
     </header>
 
-    <main class="container" aria-label="Vision control dashboard">
+    <main class="container" aria-label="Face recognition and servo tracking dashboard">
         <section class="card" aria-labelledby="face-heading">
-            <h2 id="face-heading">Face Picture</h2>
+            <h2 id="face-heading">Detected Face</h2>
             <div id="face-frame" class="face-frame" aria-live="polite">
-                <img id="face-image" src="" alt="Locked face crop">
+                <img id="face-image" src="" alt="Recognized face crop">
                 <div id="no-face-msg" class="face-placeholder">Waiting for face...</div>
             </div>
         </section>
 
         <section id="movement-card" class="card movement-card" aria-labelledby="tracking-heading">
-            <h2 id="tracking-heading">Tracking Status</h2>
+            <h2 id="tracking-heading">Servo Tracking</h2>
             <div id="movement-status" class="value movement-value motion-unknown" aria-live="polite">WAITING...</div>
             <div id="target-info" class="meta-line target-line">Target: --</div>
             <div id="lock-status" class="status-badge searching">Searching</div>
@@ -367,14 +367,14 @@
         </section>
 
         <section class="card" aria-labelledby="system-heading">
-            <h2 id="system-heading">System Connection</h2>
+            <h2 id="system-heading">Vision Node Status</h2>
             <div id="connection-status" class="status-badge disconnected" aria-live="polite">Disconnected</div>
             <div id="timestamp" class="value">--:--:--</div>
             <div id="stream-age" class="meta-line">Stream: waiting</div>
         </section>
 
         <section class="card" id="log-panel" aria-labelledby="log-heading">
-            <h2 id="log-heading">Event Log</h2>
+            <h2 id="log-heading">System Events</h2>
             <div id="logs" class="log-list" aria-live="polite" aria-relevant="additions"></div>
         </section>
     </main>
