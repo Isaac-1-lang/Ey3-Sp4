@@ -12,3 +12,4 @@ dp.txt
 .venv/
 __pycache__/
 .DS_Store
+config.bat
